@@ -1,19 +1,6 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
-
-/**
- * @title ChronoChain
- * @dev Decentralized timestamping and event logging system
- */
-contract ChronoChain {
-    struct Entry {
-        bytes32 dataHash;       // Hash of data being timestamped
-        address submitter;      // Address that submitted the entry
-        uint256 timestamp;      // Block timestamp when entry was recorded
-        string metadataURI;     // Optional metadata URI for additional info
-    }
-
-    // Array holding chronological entries
+Hash of data being timestamped
+        address submitter;      Block timestamp when entry was recorded
+        string metadataURI;     Array holding chronological entries
     Entry[] private entries;
 
     // Event emitted when a new entry is logged
@@ -77,3 +64,6 @@ contract ChronoChain {
         return (entries[index].dataHash == dataHash);
     }
 }
+// 
+End
+// 
