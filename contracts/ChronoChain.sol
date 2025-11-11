@@ -4,6 +4,7 @@ Hash of data being timestamped
     Entry[] private entries;
 
     End
+End
 // 
 // 
 End
